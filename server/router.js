@@ -156,12 +156,12 @@ router
   .route('/reviews/:id/report')
   .put(controller.updateReport);
 
-// reviews
-// router
-//   .get('/reviews/:id', controllers.reviews.getReviews)
-//   .post('/reviews', controllers.reviews.addReview)
-//   .post('/review/characteristics', controllers.reviews.addCharacteristics)
-//   .post('/review/photo', controllers.reviews.addReviewsPhoto)
+
+router
+  .get('/reviews/:id', controllers.reviews.getReviews)
+  .post('/reviews', controllers.reviews.addReview)
+  .post('/review/characteristics', controllers.reviews.addCharacteristics)
+  .post('/review/photo', controllers.reviews.addReviewsPhoto)
 
 
 
